@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Gach's certificates page">
+    <meta name="author" content="Gach Peter">
+    <title>ABOUT ME</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/all.min.css" type="text/css" />
+    <link rel="stylesheet" href="css/light.css" id="theme" type="text/css" />
+    <link rel="shortcut icon" href="icons/prof.ico">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/side.js"></script>
+    <script type="text/javascript" src="js/all.min.js"></script>
+</head>
+
+<body class="light">
+    <nav class="navbar navbar-expand-lg ">
+        <h5 class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarT" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa fa-server"></i>
+        </h5>
+        <div class="collapse navbar-collapse" id="navbarT">
+            <ul class="aside ">
+                <li><img src="./image/mylogo.png" alt="" width="80%" height="130" /></li>
+                <li class="navitem now" id="h">
+                    <p class="navlink active " onclick="home()" id="hl"><i class="fa fa-home"></i> Home </p>
+                </li>
+
+                <li class="navitem " id="s">
+                    <p class="navlink " onclick="services()" id="sl"><i class="fa fa-list"></i> Services</p>
+                </li>
+
+
+                <li class="navitem " id="p">
+                    <p class="navlink " onclick="portfolio()" id="pl"><i class="fa fa-briefcase "></i> Portfolio</p>
+                </li>
+
+                <li class="navitem " id="b">
+                    <p class="navlink " onclick="blog()" id="bl"><i class="fa fa-comments"></i> Blog</p>
+                </li>
+
+                <li class="navitem " id="c">
+                    <p class="navlink " onclick="contact()" id="cl"><i class="fa fa-phone"></i> Contact</p>
+                </li>
+
+
+                <li class="navitem " id="a">
+                    <p class="navlink " onclick="about()" id="al"><i class="fa fa-user"></i> About</p>
+                </li>
+                <li class="togi">
+                    <h5 class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarT" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa fa-server"></i>
+                    </h5>
+                </li><br/>
+
+                <li>
+                    <p>Gach Peter &copy 2020</p>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <!--Container-->
+    <div class="controls">
+
+        <span onclick="tdark()"><i style="font-size:23px" class="fa fa-toggle-off" id="toggleDark"></i><span><strong> Dark mode</strong></span></span>
+        <i class="fa fa-spin fa-cog" aria-hidden="true" id="set" onclick="settings()"></i>
+        <div class="bgw" id="white" style="display:none"><i class="fa fa-circle" onclick="wred()" style="color:red"></i><i class="fa fa-circle " onclick="wpurple()" style="color:purple"></i><i class="fa fa-circle" onclick="wgreen()" style="color:green"></i>
+            <i class="fa fa-circle " onclick="wblue()" style="color:blue"></i><i class="fa fa-circle " style="color:indigo" onclick="wingdigo()"></i><i class="fa fa-circle " style="color:brown" onclick="wbrown()"></i>
+        </div>
+    </div>
+    <div class="main" id="maintab">
+        <div class="contents">
+            <!--Home Section-->
+            <div id="home" class="on">
+                <div class="profile">
+                    <img src="icons/prof.ico" alt="Profile" />
+                    <h3>Gach Peter(Gipi)</h3>
+                    <p>A a web developer</p>
+                </div>
+            </div>
+
+            <!--Service Section-->
+            <div id="services" class="off">
+                <div class="profile">
+                    <!--services-->
+                    <h2>Services offered</h2>
+                    <div class="mcard tri">
+                        <i class="fa fa-laptop fa-5x r" style="color:purple"></i>
+                        <h5>Web design</h5>
+                        <p>Get the Best Quality,user-friendly,interactive and Responsive websites designs built at your interests with uptodate web design technologies like;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                    <div class="mcard tri">
+                        <i class="fa fa-object-ungroup fa-5x r" style="color:purple"></i>
+                        <h5>Protyping and Graphics</h5>
+                        <p> Your work is presented to you before devlopement using a prototype to make a design satisfying your needs,I also offer graphic design services like;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                    <div class="mcard tri">
+                        <i class="fa fa-code fa-5x r" style="color:purple"></i>
+                        <h5>Web Development</h5>
+                        <p>I also do these also have the following as programmer and Graphic designer they can be either might be optional additional contents your service;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                    <div class="mcard tri">
+                        <i class="fa fa-th fa-5x" style="color:purple"></i>
+                        <h5>Tkinter Ui</h5>
+                        <p>I also do these also have the following as programmer and Graphic designer they can be either might be optional additional contents your service;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                    <div class="mcard tri">
+                        <i class="fa fa-cubes fa-5x r" style="color:purple"></i>
+                        <h5>3D assets</h5>
+                        <p>I also do these also have the following as programmer and Graphic designer they can be either might be optional additional contents your service;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                    <div class="mcard tri">
+                        <i class="fa fa-paint-brush fa-5x r" style="color:purple"></i>
+                        <h5>Graphics</h5>
+                        <p>I also do these also have the following as programmer and Graphic designer they can be either might be optional additional contents your service;</p>
+                        <button class="btn" onclick="contact()">Get this service</button>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------------------blog Section---------------------------------------------------------------------------------------------------------------------------->
+            <div id="blog" class="off">
+                <div class="profile">
+                    <h2>Top 5 Blogs</h2>
+                    <br/>
+
+                    <div class="blog">
+                        <img src="./image/web.png" alt="web design" />
+                        <h5>Responsive design<sub>19-08-2020 1:30</sub></h5><br/>
+                        <p>Design websites that are supported in all devices deskstop,laptops,tablets,mobile and Tv responsive</p><sub class="r">#web_design #html #css #js #bootstrap</sub>
+                    </div>
+                    <div class="blog">
+
+                        <img src="./image/learn.jpg" alt="web design" />
+                        <h5>Web design<sub>19-08-2020 1:30</sub></h5><br />
+                        <p>Learn web design from become a web designer from nothing to something in a few simple a steps</p><sub class="r">#web_design #html #css #js #bootstrap</sub>
+                    </div>
+                    <div class="blog">
+
+                        <img src="./image/3dart.png" alt="3d art design" />
+                        <h5>3d mpdelling<sub>19-08-2020 1:30</sub></h5><br />
+                        <p>Learn web design from become a web designer from nothing to something in a few simple a steps</p><sub class="r">#graphics #3dart</sub>
+                    </div>
+                    <div class="blog">
+
+                        <img src="./image/mylogo.png" alt="logo" />
+                        <h5>Logo design<sub>30-08-2020 1:30</sub></h5><br />
+                        <p>Personal logo design simple to make,meaningful and beatifull</p>
+                        <sub class="r">#graphics #logo</sub>
+                    </div>
+                    <div class="blog" style=>
+
+                        <img src="./image/com.jpg" alt="web design" />
+                        <h5>Programming<sub>19-08-2020 1:30</sub></h5><br />
+                        <p>Programming clientside with javascript and server side using php</p><sub class="r">#Programming</sub>
+                    </div>
+                </div>
+            </div>
+            <!---------------------------------------------------------------Contact Section------------------------------------------------------------------------------------------------------------------------------>
+            <div id="contact" class="off">
+                <div class="profile">
+                    <!--Contact-->
+                    <h2>Contact me</h2>
+                    <div class="co"><br/><br/><br/><span class="fa fa-3x fa-phone r"><br /></span><br/><br/><br/><a href="telto:256778703114"><button class="btn">Call +256 778 703114</button></a></div>
+                    <div class="co"><br/><br/><br/><span class="fa fa-envelope fa-3x r"><br /></span><br/><br/><br/><a href="mailto:gachpeter2@gmail.com"><button class="btn">gachpeter2@gmail.com</button></a></div>
+                    <div class="co"><br/><br/><br/><span class="fa fa-map-marker fa-3x r"><br /></span><br/><br/><br/><button class="btn">kasa-Luwero, Uganda</button></div>
+                    <div class="names"><input placeholder="Name*" class="input" /><input placeholder="youremail@gmail.com" class="input"></div>
+                    <input placeholder="subject" class="inputb">
+                    <textarea class="inputb" rows="7" placeholder="message"></textarea>
+                    <button class="btn btn-primary">Send message</button>
+                    <div> <img class="ico" src="./icons/fb.ico" /><img class="ico" src="./icons/tt.png" /><img class="ico" src="./icons/ig.ico" /><img class="ico" src="./icons/id.ico" /></div>
+
+                </div>
+            </div>
+            <!--Portfolio Section-->
+            <div id="portfolio" class="off">
+                <div class="profile">
+                    <!--Portfolio-->
+                    <h1>Portfolio</h1>
+                    <h2 data-target="#websites" data-toggle="collapse">Websites</h2>
+                    <div class="collapse" id="websites">
+                        <iframe width="100%" height="450vh" src="http://localhost/Fake News web"></iframe></div>
+                    <hr/>
+                    <h2 data-target="#photos" data-toggle="collapse">Photography</h2>
+                    <div class="collapse" id="photos">
+                        <img width="45%" height="400px" src="./image/prototype.png" />
+                        <img width="45%" height="400px" src="./image/3dart.png" />
+                        <img width="45%" height="400px" src="./image/well.png" />
+                        <img width="45%" height="400px" src="./image/mylogo.png" />
+                    </div>
+                    <hr/>
+                    <h2 data-target="#models" data-toggle="collapse">Models</h2>
+                    <div class="collapse" id="models">
+                        <iframe width="45%" height="350px" src="./models/bed.html"></iframe>
+                        <iframe width="45%" height="350px" src="./models/sofa.html"></iframe>
+                        <iframe width="45%" height="350px" src="./models/speaker.html"></iframe>
+                        <iframe width="45%" height="350px" src="./models/well.html"></iframe>
+                    </div>
+                </div>
+            </div>
+
+            <!--About Section-->
+            <div id="about" class="off">
+                <div class="profile">
+
+                    <h1>About me</h1>
+                    <h5>Am Gach Peter(A Front-end-web developer)</h5>
+                    <p>Am self -taught creative and innovative front-end developer,designing responsive,interactive and user friendly websites is my goal,priority ,time management and co-operating with my fellow team or personal are my handy equipments</p>
+                    <div class="all">
+
+                        <table class="table stripped half">
+                            <tr>
+                                <td>Name </td>
+                                <td>Gach Peter(Gipi)</td>
+                            </tr>
+                            <tr>
+                                <td>Age </td>
+                                <td>17</td>
+                            </tr>
+                            <tr>
+                                <td>Country </td>
+                                <td>Uganda</td>
+                            </tr>
+                            <tr>
+                                <td>Birthday</td>
+                                <td>29 April,2004</td>
+                            </tr>
+                            <tr>
+                                <td><button class="btn" onclick="contact()">Hire me</button></td>
+
+                            </tr>
+                        </table>
+                        <table class="table half">
+                            <tr>
+                                <td>Website </td>
+                                <td>www.gachpeter.ga</td>
+                            </tr>
+                            <tr>
+                                <td>Email </td>
+                                <td>gachpeter2@gmail.com</td>
+                            </tr>
+                            <tr>
+
+                                <td>Tel </td>
+                                <td>+256 778703114</td>
+
+                            </tr>
+                            <tr>
+                                <td>Freelance</td>
+                                <td>Available</td>
+                            </tr>
+                            <tr>
+                                <td><a href="./image/My_res.pdf" target="_blank"><button class="btn">Download My CV</button></a></td>
+
+                            </tr>
+                        </table>
+                        <table class="table table-striped pro">
+                            <tr>
+                                <td>HTML5</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JAVASCRIPT(ES6)</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>BOOTSTRAP</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>JQuery</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100">85%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>CSS3</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">90%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>PHP</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">75%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Angular</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 70%;" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">70%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Wordpress</td>
+                                <td>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 80%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">80%</div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+
+                <div class="card half">
+                    <div class="card-heading">
+                        <h2>Education</h2>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Programming Hero</h5>
+                            </div>
+                            <div class="card-body">
+                                This was my first remote school they introduced to programming with python and also some web design
+                            </div>
+                            <div class="card-footer bg-transparent">2019 March - 2019 May</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5> Programming Hero</h5>
+                            </div>
+                            <div class="card-body">
+                                Here continued to dive into programming and web and make myself much more comfortable and from here i was confident to take on the advanced Courses
+                            </div>
+                            <div class="card-footer bg-transparent">2019 May - 2019 July
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5> W3schools</h5>
+                            </div>
+                            <div class="card-body">
+
+                                From there i went through all the advanced web design topics and also used documentation as references
+                            </div>
+                            <div class="card-footer bg-transparent">2019 May - 2019 July</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card half">
+                    <div class="card-heading">
+                        <h2>Experiences</h2>
+                    </div>
+                    <div class="card-body">
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Programming</h5>
+                            </div>
+                            <div class="card-body">
+                                Programming with the Python,Java,C# and C++,Python libraries like Tkinter UI designs and Pygame to make simple applications.
+                            </div>
+                            <div class="card-footer bg-transparent">2019 March - todate</div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Web design</h5>
+                            </div>
+                            <div class="card-body">
+                                I create/design responsive,interactive,user-friendly dynamic websites with up-to-date web libraries like Bootstrap,JQuery and Angular hence making kind of all websites that satisfy your needs.
+                            </div>
+                            <div class="card-footer bg-transparent">2020 May - todate
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header">
+                                <h5>Graphics</h5>
+                            </div>
+                            <div class="card-body ">
+
+                                I also design web icons,web prototypes,mockups and other graphics design features like photo editing
+                            </div>
+                            <div class="card-footer bg-transparent">2020 sept - todate</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
