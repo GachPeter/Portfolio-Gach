@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="./aframe.min.js"></script>
+    <script src="./orbit.min.js"></script>
+    <title>Tv</title>
+</head>
+
+<body style="background-color: aqua;">
+    <a-scene>
+        <a-assets>
+            <a-asset-item id="tree" src="tv.gltf"></a-asset-item>
+        </a-assets>
+
+        <!-- Using the asset management system. -->
+        <a-gltf-model src="#tree"></a-gltf-model>
+
+        <!-- Defining the URL inline. Not recommended but more comfortable for web developers. -->
+        <a-gltf-model src="tv.gltf"></a-gltf-model>
+    </a-scene>
+</body>
+
+</html>
